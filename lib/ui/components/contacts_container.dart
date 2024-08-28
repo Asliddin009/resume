@@ -25,17 +25,17 @@ class ContactsContainer extends StatelessWidget {
             LinkText(
               text: 'Вк: https://vk.com/ds_ss_qrt',
               style: Theme.of(context).textTheme.titleMedium!,
-              mode: LaunchMode.inAppBrowserView,
+              mode: LaunchMode.externalApplication,
             ),
             LinkText(
               text: 'Github: https://github.com/Asliddin009',
               style: Theme.of(context).textTheme.titleMedium!,
-              mode: LaunchMode.inAppBrowserView,
+              mode: LaunchMode.externalNonBrowserApplication,
             ),
             LinkText(
               text: 'Stepik: https://stepik.org/users/76022453/profile',
               style: Theme.of(context).textTheme.titleMedium!,
-              mode: LaunchMode.inAppBrowserView,
+              mode: LaunchMode.platformDefault,
             ),
             Text(
               'Telegram: @ds_ss_qrt',
