@@ -1,7 +1,9 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:linkfy_text/linkfy_text.dart';
 import 'package:resume_app/ui/components/app_container.dart';
-import 'package:text_link/text_link.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class ContactsContainer extends StatelessWidget {
   const ContactsContainer({super.key});
@@ -22,20 +24,38 @@ class ContactsContainer extends StatelessWidget {
                     fontSize: 20,
                   ),
             ),
-            LinkText(
-              text: 'Вк: https://vk.com/ds_ss_qrt',
-              style: Theme.of(context).textTheme.titleMedium!,
-              mode: LaunchMode.externalApplication,
+            LinkifyText(
+              'Вк: https://vk.com/ds_ss_qrt',
+              onTap: (url) {
+                log(url.value.toString());
+                launchUrlString(url.value.toString());
+              },
+              linkStyle: Theme.of(context).textTheme.titleMedium!.copyWith(
+                    color: Colors.blue,
+                  ),
+              textStyle: Theme.of(context).textTheme.titleMedium!,
             ),
-            LinkText(
-              text: 'Github: https://github.com/Asliddin009',
-              style: Theme.of(context).textTheme.titleMedium!,
-              mode: LaunchMode.externalNonBrowserApplication,
+            LinkifyText(
+              'Github: https://github.com/Asliddin009',
+              onTap: (url) {
+                log(url.value.toString());
+                launchUrlString(url.value.toString());
+              },
+              linkStyle: Theme.of(context).textTheme.titleMedium!.copyWith(
+                    color: Colors.blue,
+                  ),
+              textStyle: Theme.of(context).textTheme.titleMedium!,
             ),
-            LinkText(
-              text: 'Stepik: https://stepik.org/users/76022453/profile',
-              style: Theme.of(context).textTheme.titleMedium!,
-              mode: LaunchMode.platformDefault,
+            LinkifyText(
+              'Stepik: https://stepik.org/users/76022453/profile',
+              onTap: (url) {
+                log(url.value.toString());
+                launchUrlString(url.value.toString());
+              },
+              linkStyle: Theme.of(context).textTheme.titleMedium!.copyWith(
+                    color: Colors.blue,
+                  ),
+              textStyle: Theme.of(context).textTheme.titleMedium!,
             ),
             Text(
               'Telegram: @ds_ss_qrt',

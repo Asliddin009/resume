@@ -7,7 +7,7 @@ environment:
 
 dependencies:
   google_fonts: ^6.2.1
-  text_link: ^1.0.0
+  linkfy_text: ^1.1.6
   url_launcher: ^6.3.0
   flutter:
     sdk: flutter
