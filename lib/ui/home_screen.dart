@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume_app/ui/components/about_me.dart';
 import 'package:resume_app/ui/components/contacts_container.dart';
 import 'package:resume_app/ui/courses_list/courses_list.dart';
 import 'package:resume_app/ui/project_list/project_list.dart';
@@ -25,6 +26,8 @@ class HomeScreen extends StatelessWidget {
               ProjectList(),
               //Курсы
               CoursesList(),
+              //Обо мне
+              AboutMeWidget(),
               //Контакты
               ContactsContainer()
             ],

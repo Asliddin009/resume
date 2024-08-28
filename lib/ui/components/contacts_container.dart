@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:linkfy_text/linkfy_text.dart';
 import 'package:resume_app/ui/components/app_container.dart';
+import 'package:resume_app/utils/ui_utils.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class ContactsContainer extends StatelessWidget {
@@ -11,6 +12,7 @@ class ContactsContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppContainer(
+      height: UiUtils.isMobileDevice(context) ? 300 : 250,
       child: Padding(
         padding: const EdgeInsets.all(30),
         child: Column(
