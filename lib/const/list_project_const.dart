@@ -3,9 +3,14 @@ Set<ProjectEntity> projects = {
       name: 'Личный Кабинет Инфо Югра',
       icon: 'assets/project/icon/info_cabinet.png',
       screens: [
-        'assets/project/screens/cab1.jpg',
-        'assets/project/screens/cab2.jpg',
-        'assets/project/screens/cab3.jpg',
+        'assets/project/screens/cab1.png',
+        'assets/project/screens/cab2.png',
+        'assets/project/screens/cab3.png',
+        'assets/project/screens/cab4.png',
+        'assets/project/screens/cab5.png',
+        'assets/project/screens/cab6.png',
+        'assets/project/screens/cab7.png',
+        'assets/project/screens/cab8.png',
       ],
       description: """
           \nЛичный кабинет для оплаты Жкх, внесения данных с счетчика,
@@ -15,9 +20,16 @@ Set<ProjectEntity> projects = {
           \nа также переделывал UI.
           """),
   const ProjectEntity(
-      name: 'ИС автоматизации посещений студентов на занятий',
-      icon: '',
-      screens: [],
+      name: 'ИС автоматизированного отмечания посещения студентов',
+      icon: 'assets/project/icon/isa.png',
+      screens: [
+        'assets/project/screens/is1.png',
+        'assets/project/screens/is2.png',
+        'assets/project/screens/is3.png',
+        'assets/project/screens/is4.png',
+        'assets/project/screens/is5.png',
+        'assets/project/screens/is6.png',
+      ],
       description: """
       \nPWA и мобильное приложения для автоматизации посещений студентов на занятиях
       \nс помощью сканирования Qr-кода,частично интегрирован в сервисы университета.
@@ -28,7 +40,11 @@ Set<ProjectEntity> projects = {
   const ProjectEntity(
       name: 'Расписание занятий ЮГУ',
       icon: 'assets/project/icon/timetable.png',
-      screens: [],
+      screens: [
+        'assets/project/screens/time1.png',
+        'assets/project/screens/time2.png',
+        'assets/project/screens/time3.png',
+      ],
       description: """
       \nМобильное приложения для просмотра расписания вуза, а также сохранять их локально
       \nНа данном проекте я работал с Bloc, getIt, freezed, hydrated bloc и awesome snack bar
@@ -38,7 +54,15 @@ Set<ProjectEntity> projects = {
   const ProjectEntity(
       name: 'NashStore',
       icon: 'assets/project/icon/nashstore.png',
-      screens: [],
+      screens: [
+        'assets/project/screens/nash0.png',
+        'assets/project/screens/nash1.png',
+        'assets/project/screens/nash2.png',
+        'assets/project/screens/nash3.png',
+        'assets/project/screens/nash4.png',
+        'assets/project/screens/nash5.png',
+        'assets/project/screens/nash6.png',
+      ],
       description: """
       \nМобильное приложения для просмотра и установки приложений на подобие Play market или App Store.
       \nНа данном проекте я работал с GetX, lottie, flutter_file_downloader, skeletonizer, dio
@@ -48,8 +72,10 @@ Set<ProjectEntity> projects = {
       name: 'Календарь, Todo, калькулятор,',
       icon: '',
       screens: [],
-      description:
-          'Лабораторные работы по мобильной разработке(калькулятор, конвертер, календарь, todo, работа с интернет ресурсами)'),
+      description: """
+        \nЛабораторные работы по мобильной разработке(калькулятор, конвертер, календарь, todo, работа с интернет ресурсами)
+        \nНа данном проекте я работал с Bloc, easy_localization, google_fonts, hive, cached_network_image   
+          """),
   const ProjectEntity(
       name: 'AlarmLear',
       icon: 'assets/project/icon/a_learn.png',

@@ -15,7 +15,7 @@ class TitleContainer extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.only(left: 25, right: 50),
             child: CircleAvatar(
-              backgroundImage: AssetImage('avatar.jpg'),
+              backgroundImage: AssetImage('avatar.png'),
               radius: 100,
             ),
           ),

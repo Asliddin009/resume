@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resume_app/ui/components/app_container.dart';
 import 'package:text_link/text_link.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactsContainer extends StatelessWidget {
   const ContactsContainer({super.key});
@@ -14,17 +15,27 @@ class ContactsContainer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            Text(
+              'Контакты:',
+              style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+            ),
             LinkText(
               text: 'Вк: https://vk.com/ds_ss_qrt',
               style: Theme.of(context).textTheme.titleMedium!,
+              mode: LaunchMode.inAppBrowserView,
             ),
             LinkText(
               text: 'Github: https://github.com/Asliddin009',
               style: Theme.of(context).textTheme.titleMedium!,
+              mode: LaunchMode.inAppBrowserView,
             ),
             LinkText(
               text: 'Stepik: https://stepik.org/users/76022453/profile',
               style: Theme.of(context).textTheme.titleMedium!,
+              mode: LaunchMode.inAppBrowserView,
             ),
             Text(
               'Telegram: @ds_ss_qrt',

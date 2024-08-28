@@ -46,6 +46,16 @@ class DetailProjectScreen extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(
+              height: 25,
+            ),
+            Text(
+              'Скриншоты:',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
             ScrollConfiguration(
               behavior: MyCustomScrollBehavior(),
               child: SizedBox(
@@ -53,10 +63,13 @@ class DetailProjectScreen extends StatelessWidget {
                 child: ListView.separated(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => Image.asset(
-                    projectEntity.screens.elementAt(index),
-                    fit: BoxFit.cover,
-                    height: 250,
+                  itemBuilder: (context, index) => ClipRRect(
+                    borderRadius: BorderRadius.circular(16.0),
+                    child: Image.asset(
+                      projectEntity.screens.elementAt(index),
+                      fit: BoxFit.cover,
+                      height: 250,
+                    ),
                   ),
                   itemCount: projectEntity.screens.length,
                   separatorBuilder: (BuildContext context, int index) {
