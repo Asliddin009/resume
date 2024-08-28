@@ -12,12 +12,20 @@ class TitleContainer extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Padding(
-            padding: EdgeInsets.only(left: 25, right: 50),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/avatar.png'),
-              foregroundImage: AssetImage('assets/avatar.png'),
-              radius: 100,
+          Padding(
+            padding: const EdgeInsets.only(left: 50, right: 50),
+            child: Container(
+              width: 150.0,
+              height: 150.0,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                color: Color.fromARGB(255, 140, 133, 114),
+                image: DecorationImage(
+                  image: AssetImage(
+                    'assets/avatar.png',
+                  ),
+                ),
+              ),
             ),
           ),
           Expanded(
