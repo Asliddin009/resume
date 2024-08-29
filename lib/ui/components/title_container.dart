@@ -40,7 +40,7 @@ class _MobileListState extends State<_MobileList> {
                   color: Color.fromARGB(255, 140, 133, 114),
                   image: DecorationImage(
                     image: AssetImage(
-                      'assets/avatar.png',
+                      'assets/avatar1.png',
                     ),
                   ),
                 ),
@@ -111,7 +111,7 @@ class _WebList extends StatelessWidget {
               color: Color.fromARGB(255, 140, 133, 114),
               image: DecorationImage(
                 image: AssetImage(
-                  'assets/avatar.png',
+                  'assets/avatar1.png',
                 ),
               ),
             ),

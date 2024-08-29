@@ -20,7 +20,7 @@ class CoursesList extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.only(left: 25, top: 5),
               child: Text(
-                'Проекты:',
+                'Курсы:',
                 style: Theme.of(context).textTheme.titleMedium,
                 textAlign: TextAlign.left,
               ),
