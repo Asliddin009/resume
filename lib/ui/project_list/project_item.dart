@@ -37,7 +37,7 @@ class ProjectItem extends StatelessWidget {
                   )),
             ),
             Expanded(
-              child: Text(
+              child: SelectableText(
                 projectEntity.name,
                 style: Theme.of(context)
                     .textTheme

@@ -33,13 +33,20 @@ class DetailCourseScreen extends StatelessWidget {
             ),
             courseEntity.diplom.isEmpty
                 ? const SizedBox()
-                : ClipRRect(
-                    borderRadius: BorderRadius.circular(16.0),
-                    child: Image.asset(
-                      courseEntity.diplom,
-                      fit: BoxFit.fitHeight,
-                      height: 400,
-                    )),
+                : InteractiveViewer(
+                    trackpadScrollCausesScale: true,
+                    panEnabled: true, // Включает панорамирование
+                    scaleEnabled: true, // Включает масштабирование
+                    minScale: 0.5,
+                    maxScale: 4.0,
+                    child: ClipRRect(
+                        borderRadius: BorderRadius.circular(16.0),
+                        child: Image.asset(
+                          courseEntity.diplom,
+                          fit: BoxFit.fitHeight,
+                          height: 400,
+                        )),
+                  ),
             const SizedBox(
               height: 25,
             )

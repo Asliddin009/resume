@@ -20,7 +20,7 @@ Set<ProjectEntity> projects = {
           \nа также переделывал UI.
           """),
   const ProjectEntity(
-      name: 'ИС автоматизированного отмечания посещения студентов',
+      name: 'ИСA отмечания посещения студентов',
       icon: 'assets/project/icon/isa.png',
       screens: [
         'assets/project/screens/is1.png',

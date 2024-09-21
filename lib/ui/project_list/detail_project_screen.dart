@@ -101,7 +101,7 @@ class _MobileState extends State<_Mobile> {
             : Container(
                 margin: const EdgeInsets.only(
                     right: 25, left: 10, bottom: 10, top: 10),
-                child: Text(
+                child: SelectableText(
                   widget.projectEntity.description,
                   textAlign: TextAlign.left,
                   style: Theme.of(context)
@@ -148,7 +148,7 @@ class _Web extends StatelessWidget {
               ),
         Expanded(
             flex: 3,
-            child: Text(
+            child: SelectableText(
               projectEntity.description,
               textAlign: TextAlign.left,
               style: Theme.of(context)

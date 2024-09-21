@@ -72,10 +72,14 @@ class _MobileListState extends State<_MobileList> {
                     style: Theme.of(context).textTheme.titleSmall,
                   ),
                   Text(
-                    '• Опыт работы: 1 год коммерческой разработки и 1 год разработки программного обеспечения в вузе',
+                    'Опыт работы: 2 год коммерческой разработки в "Инфо Югра"',
                     overflow: TextOverflow.ellipsis,
-                    maxLines: 3,
-                    style: Theme.of(context).textTheme.titleSmall,
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  Text(
+                    '1 год разработки программного обеспечения в Start Up лаборатории ЮГУ',
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ],
               )),
@@ -139,7 +143,12 @@ class _WebList extends StatelessWidget {
               style: Theme.of(context).textTheme.titleMedium,
             ),
             Text(
-              'Опыт работы: 1 год коммерческой разработки и 1 год разработки программного обеспечения в вузе',
+              'Опыт работы: 2 год коммерческой разработки в "Инфо Югра"',
+              overflow: TextOverflow.ellipsis,
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            Text(
+              '1 год разработки программного обеспечения в Start Up лаборатории ЮГУ',
               overflow: TextOverflow.ellipsis,
               style: Theme.of(context).textTheme.titleMedium,
             ),
